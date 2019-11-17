@@ -1,0 +1,30 @@
+.header-container {
+  height: 70px;
+  width: 100%;
+  background: rgb(23, 22, 22);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-title {
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 120px;
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+    justify-content: flex-start;
+    
+    a:-webkit-any-link {
+      color: grey;
+    }
+    li {
+      text-align: start;
+
+    }
+  }
+}

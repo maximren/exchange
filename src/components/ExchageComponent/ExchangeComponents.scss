@@ -1,0 +1,62 @@
+.main-container {
+  font-family: Gill Sans;
+  
+  h1 {
+    margin: 40px 0;
+  }
+
+  .form-contaienr {
+    width: 340px;
+    height: 260px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dropdown-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+
+    .input {
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      width: 120px;
+      height: 40px;
+      border: 1px solid grey;
+      outline: none;
+      background: lightgray;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .currency-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .currency-label {
+        font-size: 34px;
+        margin-top: 25px;
+      }
+  
+      .currency-value {
+        font-size: 22px;
+        margin-top: 25px;
+        font-weight: 600;
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+  }
+
+}

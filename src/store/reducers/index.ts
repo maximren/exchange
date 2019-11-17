@@ -1,3 +1,7 @@
-import { combineReducer } from 'redux-immutable';
+import { combineReducers } from 'redux-immutable';
 
-export default combineReducer({});
+import fetchLatestRate from './fetchLatestRate';
+
+export default combineReducers({
+  fetchLatestRate,
+});

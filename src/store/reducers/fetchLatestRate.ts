@@ -1,14 +1,17 @@
-import { Map, List } from 'immutable';
+import { OrderedMap, Map } from 'immutable';
 
 const initialState = Map({
-  data: List(),
-  fetched: false,
+  data: OrderedMap(),
+  exchangedValue: OrderedMap(),
 })
 
 export default (state = initialState, action: any) => {
   switch(action.type) {
     case "FETCH_LATEST_RATE":
       return state.set("data", action.payload)
-                  .set("fethced", true);
+    case "SPECIFIC_CURRENCY_RATE":
+      return state.set("exchangedValue", action.payload)
+    default:
+      return state;
   }
 }

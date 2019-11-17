@@ -1,0 +1,42 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main-title {
+    margin-bottom: 60px;
+  }
+
+  .description {
+    margin-bottom: 60px;
+    width: 400px;
+    text-align: start;
+    color: grey;
+  }
+
+  .currencies-container {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1300px;
+  
+    .currency-wrapper {
+      cursor: pointer;
+      border: 1px solid grey;
+      margin: 2px;
+      padding: 5px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      width: 100px;
+  
+      &:hover {
+        background: lightgray;
+        border: 1px solid black;
+      }
+    }
+  
+  }
+}
